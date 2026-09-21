@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nvram_patcher"
+version = "2026.09.21"
+description = "simple nvram binary patcher with a text config file"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+  { name = "pidjan" },
+]
+license = "MIT"
+
+[project.scripts]
+nvram-patcher = "nvram_patcher:main"
+
+[tool.setuptools]
+py-modules = ["nvram_patcher"]
+
+[tool.ruff]
+indent-width = 2
