@@ -11,7 +11,7 @@ python nvram_patcher.py NVRAM.bin nvram.cfg -o patched.bin
 
 an example config is in [nvram.cfg](nvram.cfg)
 
-config structure is: varoffset value size varstorename, comments allowed with # symbol.
+config structure is: `varoffset value size varstorename`, comments allowed with # symbol.
 offset and value are hex, size is decimal, writes are little endian.
 
-pass -d to resolve offsets and print every write without writing anything.
+pass -d to dry check without writing.
